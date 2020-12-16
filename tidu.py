@@ -20,3 +20,7 @@ cv_show(sobely, "sobely")
 
 sobelxy = cv2.addWeighted(sobelx, 0.5, sobely, 0.5, 0)
 cv_show(sobelxy, "sobelxy")
+
+#边缘检测
+v1 = cv2.Canny(img, 80, 150)
+cv_show(v1, "v1")
